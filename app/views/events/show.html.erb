@@ -1,0 +1,13 @@
+<title>Event</title>
+<h1>Event</h1>
+
+<% @user = User.find_by(id: @event.creator_id) %>
+<%= @user.name %>
+<br>
+<%= @event.name %>
+<br>
+<%= @event.description %>
+<br>
+<%= @event.place %>
+<br>
+<%= @event.time %>
